@@ -1,0 +1,83 @@
+
+.survey-container > h1 {
+    color: black ;
+    padding-top: 8%;
+    font-weight: bolder;
+    font-size: 4rem;
+    
+    
+}
+.survey-container{
+    min-width: 100%;
+    height: 89.6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/imgs/ball.jpeg');
+    background-size: cover; /* Scale the image to cover the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    
+}
+
+
+.ageBtn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12%;
+    padding-top: 1%;
+}
+
+
+.age-btns {
+    --color: #696969; 
+    font-family: inherit;
+    display: inline-block;
+    width: 15em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  
+  .age-btns:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('/imgs/ballimg.png') no-repeat center center; 
+    background-size: cover;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .age-btns:hover {
+    color: #228b22;
+  }
+  
+  .age-btns:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .age-btns:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .age-btns:active:before {
+    background: url('../../../public/imgs/ballimg.png') no-repeat center center; 
+    transition: background 0s;
+  }
+  

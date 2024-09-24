@@ -1,0 +1,98 @@
+/* Container for the drills list */
+
+html,body {
+    height: 100%; /* Ensure the html and body elements take up the full viewport height */
+    margin: 0; /* Remove default margin/padding */
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    margin: 0;
+    color: #333;
+}
+body{
+    background-image: url('/imgs/displayDrills.jpg');
+    background-size: cover; /* Scale the image to cover the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+}
+.drillsContainer {
+    height: 100%;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    
+}
+h1{
+    color: white;
+}
+
+/* Grid layout for the drills */
+.drillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Responsive grid */
+    gap: 20px;
+    padding: 0;
+}
+
+/* Styling for each drill tile */
+.drillTile {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.drillTile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnail image styling */
+.drillTile img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.drillTile img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Drill details */
+.drillDetails {
+    padding: 15px;
+}
+
+.drillDetails h3 {
+    font-size: 18px;
+    color: #222;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.drillDetails p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .drillTile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .drillDetails {
+        text-align: center;
+    }
+}

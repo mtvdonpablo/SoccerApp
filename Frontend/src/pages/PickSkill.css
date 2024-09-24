@@ -1,0 +1,31 @@
+/* PickSkill.css */
+
+/* Ensure no margin between the Navbar and the skillContainer */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Skill Container that holds the cards */
+.skillContainer {
+    background-image: url("/imgs/field.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cards grid layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    grid-gap: 20px; /* Gap between cards */
+    padding: 20px;
+    width: 80%; /* Adjust width to center the cards nicely */
+    margin: 0 auto; /* Center the grid */
+}
+
