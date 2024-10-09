@@ -24,12 +24,6 @@ function PickSkill(){
                 onCardClick={() => handleCardClick("shooting")}  
             />
             <Card 
-                img= "/imgs/heading.jpeg"
-                skill = "Heading"
-                onCardClick={() => handleCardClick("heading")} 
-
-            />
-            <Card 
                 img= "/imgs/zidane-first-touch.jpg"
                 skill = "First Touch"
                 onCardClick={() => handleCardClick("first touch")}  
@@ -42,33 +36,9 @@ function PickSkill(){
 
             />
             <Card 
-                img= "/imgs/longpass.jpeg"
-                skill = "Long Passing"
-                onCardClick={() => handleCardClick("long passing")}  
-
-            />
-            <Card 
-                img= "/imgs/crossing.jpeg"
-                skill = "Crossing"
-                onCardClick={() => handleCardClick("crossing")}  
-
-            />
-            <Card 
-                img= "/imgs/tackel.jpeg"
-                skill = "Tackeling"
-                onCardClick={() => handleCardClick("tackeling")}  
-
-            />
-            <Card 
                 img= "/imgs/dribble.jpeg"
                 skill = "Dribbling"
                 onCardClick={() => handleCardClick("dribbling")}  
-
-            />
-            <Card 
-                img= "/imgs/skill.jpeg"
-                skill = "Skill Moves"
-                onCardClick={() => handleCardClick("skill moves")}  
 
             />
             <Card 
